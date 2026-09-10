@@ -103,6 +103,7 @@ const quizQuestions = [
 let questionNumberCounter = 0;
 let score = 0;
 let hasAnswered = false;
+let isQuizEnded = false;
 const questionCounter = document.querySelector(".question-counter");
 const questionText = document.querySelector(".question-text");
 const optionsList = document.querySelector(".options-list");
@@ -138,12 +139,13 @@ nextBtn.addEventListener("click", function () {
     document.querySelector(".score").style.display = "block";
 
     questionCounter.innerHTML = `The Quiz has ended, You scored ${score}/15 questions`;
-    scoreTeller.innerHTML = "please refresh the page to restart the quiz... ";
+    scoreTeller.innerHTML = `Press "Enter" key to retake the Quiz....`;
+    isQuizEnded = true;
   }
 });
 document.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    if (questionNumberCounter >= quizQuestions.length) {
+    if (isQuizEnded) {
       location.reload();
     } else {
       nextBtn.click();
