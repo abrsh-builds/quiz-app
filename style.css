@@ -1,7 +1,6 @@
 body {
-  
-background: radial-gradient(circle, #3F72AF, #112D4E, #3F72AF);
-  background-size: 200% 200%; 
+  background: radial-gradient(circle, #3f72af, #112d4e, #3f72af);
+  background-size: 200% 200%;
   animation: gradientShift 20s ease infinite;
   min-height: 100vh;
   margin: 0;
@@ -11,109 +10,108 @@ background: radial-gradient(circle, #3F72AF, #112D4E, #3F72AF);
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 @keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 h1 {
-   color: #F9F7F7;
-   font-size: 4rem;
-   margin-bottom:4rem ;
-   
-
+  color: #f9f7f7;
+  font-size: 4rem;
+  margin-bottom: 4rem;
 }
-.btn{
-    margin-top: 30px;
-  background-color:rgba(130, 158, 211, 0.381);
-  color: #F9F7F7;
+.btn {
+  margin-top: 30px;
+  background-color: rgba(130, 158, 211, 0.381);
+  color: #f9f7f7;
   font-size: 1rem;
-  width:100px;
-  font-family:"Barlow Semi Condensed", sans-serif;
-   font-weight: 500;
-   text-align: center;
+  width: 100px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+  text-align: center;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: #DBE2EF;
+  box-shadow: #dbe2ef;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease ,color 0.3 ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    color 0.3 ease;
+}
+.btn:hover {
+  transform: translatey(-4px);
+  background-color: rgba(130, 158, 211, 0.925);
+}
+.question-text {
+  color: #f9f7f7;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: none;
+}
+.question-counter {
+  color: #dbe2ef;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.options-list {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 
-}
-.btn:hover{
- transform: translatey(-4px);
- background-color:rgba(130, 158, 211, 0.925);
-
-}
-.question-text{
-    color: #F9F7F7;
-    font-family:"Barlow Semi Condensed", sans-serif;
-    display: none;
-
-}
-.question-counter{
-    color: #dbe2ef;
-    font-family:"Barlow Semi Condensed", sans-serif;
-   
-}
-.options-list{
- 
-    font-family:"Barlow Semi Condensed", sans-serif;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-   
-    text-align: left;
+  text-align: left;
   padding: 0;
-    grid-template-columns:1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    gap: min(50px);
-    margin-top: 30px;
-    color: #F9F7F7;
-    display:none ;
-    width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: min(50px);
+  margin-top: 30px;
+  color: #f9f7f7;
+  display: none;
+  width: 100%;
 }
-.option{
-    padding: 5px;
+.option {
+  padding: 5px;
 
-    text-align: center;
-    width: 100%;
-     list-style: none;
-     color: rgb(244, 241, 241);
-     background-color: #4f4b4bbe;
-     border-radius: 5px;
-     border:1px solid white;
-     cursor: pointer;
-     transition: background 0.2s ease, transform 0.2s ease;
-    
+  text-align: center;
+  width: 100%;
+  list-style: none;
+  color: rgb(244, 241, 241);
+  background-color: #4f4b4bbe;
+  border-radius: 5px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
 }
 .option:hover {
   background-color: grey;
   transform: translateY(-2px);
 }
-footer{
-     color: #F9F7F7;
-     text-align: center;
-     margin-top: 3rem;
-     font-family:"Barlow Semi Condensed", sans-serif; ;
+footer {
+  color: #f9f7f7;
+  text-align: center;
+  margin-top: 3rem;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
-.score{
-    color:#DBE2EF;
-    font-family:"Barlow Semi Condensed", sans-serif; ;
-    display:none;
-    
+.score {
+  color: #dbe2ef;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: none;
 }
-.disabled{
+.disabled {
   transition: none;
   background-color: #e6d6d6;
-
 }
