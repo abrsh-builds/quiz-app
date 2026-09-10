@@ -143,7 +143,11 @@ nextBtn.addEventListener("click", function () {
 });
 document.addEventListener("keydown", function (event) {
   if (event.key === "Enter") {
-    nextBtn.click();
+    if (questionNumberCounter >= quizQuestions.length) {
+      location.reload();
+    } else {
+      nextBtn.click();
+    }
   }
 });
 
