@@ -31,8 +31,8 @@ body {
 }
 h1 {
   color: #f9f7f7;
-  font-size: 4rem;
-  margin-bottom: 4rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 .btn {
   margin-top: 30px;
@@ -114,4 +114,9 @@ footer {
 .disabled {
   transition: none;
   background-color: #e6d6d6;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
 }

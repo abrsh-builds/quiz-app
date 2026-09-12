@@ -139,7 +139,7 @@ nextBtn.addEventListener("click", function () {
     document.querySelector(".score").style.display = "block";
 
     questionCounter.innerHTML = `The Quiz has ended, You scored ${score}/15 questions`;
-    scoreTeller.innerHTML = `Press "Enter" key to retake the Quiz....`;
+    scoreTeller.innerHTML = `Press "Enter" key or "Refresh" the page to retake the Quiz....`;
     isQuizEnded = true;
   }
 });
